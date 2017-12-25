@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>News Feed</title>
+    {% load staticfiles %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div id="navlinks">
+        <a href="{% url 'locator:index'%}">Home</a>
+        <a href="{% url 'locator:send_email' id=1%}">Email</a>
+        <a href="{% url 'locator:new_site'%}">Add New Site</a>
+        <a href="{% url 'locator:all_sites'%}">Show all sites</a>
+        <a href="{% url 'locator:search_tweets'%}">Tweets</a>
+      </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    </div>
+  
+
+
+  </body>
+</html>

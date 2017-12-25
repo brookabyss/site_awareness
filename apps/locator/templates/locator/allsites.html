@@ -1,0 +1,6 @@
+{% extends 'locator/base.html'%}
+{% block body%}
+{% for s in sites%}
+  <a href="{% url 'locator:site_detail' site_id=s.id %}">{{s.site_name}}</a>
+{% endfor %}
+{% endblock %}

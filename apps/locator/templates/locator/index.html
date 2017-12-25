@@ -1,0 +1,13 @@
+{% extends 'locator/base.html'%}
+{% block body%}
+<div class="searchContent">
+
+  <form class="NewsForm" action="{% url 'locator:search_news'%}" method="post">
+    {% csrf_token %}
+    <label for="phrase">News Search Phrase</label><br>
+    <input type="text" name="phrase" value="">
+    <button type="submit" name="search">Search</button>
+
+  </form>
+<div>
+{% endblock %}

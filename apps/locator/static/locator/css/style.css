@@ -1,0 +1,63 @@
+body{
+  color: white;
+  padding: 0;
+  overflow: hidden;
+  font-size: 18px;
+  margin:0;
+}
+.wrapper{
+  color: white;
+  height:2000px;
+  width:2000px;
+  background-image: url('images/blueWorld.jpg') ;
+  /*opacity: 0.5;*/
+  background-repeat: no-repeat;
+  background-size: 2000px 1020px;
+  margin-left:-50px;
+  margin-top: -20px;
+  padding:100px;
+  overflow: scroll;
+
+}
+p{
+  font-size: 18px;
+  display: block;
+  height: 200px;
+  width: 400px;
+  color: white;
+  overflow: hidden;
+}
+.articles{
+  margin-left: 500px;
+  margin-top: -100px;
+  height: 800px;
+  width: 100%;
+  overflow: scroll;
+}
+a{
+  color: orange;
+  display: block;
+}
+img{
+  height: 400px;
+  width: 400px;
+  margin-left: 10px;
+  display: block;
+  border-radius: 5px;
+}
+.searchContent{
+  margin: 100px 100px;
+}
+nav{
+  margin-top: -10px;
+}
+#navlinks{
+  margin-left: 1000px;
+
+}
+canvas{
+  /*margin:0;
+  background-image: url('images/blueWorld.jpg');
+  width: 100%;
+  height: 100%;*/
+}

@@ -1,0 +1,14 @@
+{% extends 'locator/base.html'%}
+{% block body%}
+<p>Show page</p>
+<div class="articles">
+  {% for art in articles%}
+    <h1>{{art.source.name}}</h1>
+    <h2>{{art.publishedAt}}</h2>
+    <p>{{art.description}}</p>
+    <a href={{art.url}}>{{art.url}}</a>
+    <img src="{{art.urlToImage}}" alt="newsimage">
+  {% endfor%}
+</div>
+
+{% endblock%}
